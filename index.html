@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agriculture and Fishery in the Philippines</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7f2;
+            color: #263326;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #245c35;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #b9e7a9;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+
+            background:
+                linear-gradient(
+                    rgba(0, 45, 20, 0.60),
+                    rgba(0, 35, 15, 0.75)
+                ),
+                url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1800&q=85");
+
+            background-size: cover;
+            background-position: center;
+
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+            text-shadow: 2px 3px 8px black;
+        }
+
+        .hero p {
+            max-width: 800px;
+            font-size: 21
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agriculture and Fishery in the Philippines</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7f2;
+            color: #263326;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #245c35;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #b9e7a9;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+
+            background:
+                linear-gradient(
+                    rgba(0, 45, 20, 0.60),
+                    rgba(0, 35, 15, 0.75)
+                ),
+                url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1800&q=85");
+
+            background-size: cover;
+            background-position: center;
+
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+            text-shadow: 2px 3px 8px black;
+        }
+
+        .hero p {
+            max-width: 800px;
+            font-size: 21px;
+            line-height: 1.6;
+            text-shadow: 1px 2px 5px black;
+        }
+
+        .hero button {
+            margin-top: 25px;
+            padding: 15px 28px;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            color: #245c35;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            transform: scale(1.06);
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+            color: #245c35;
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.10);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        /* CARD IMAGES */
+        .card-image {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card h3 {
+            color: #2d703f;
+            font-size: 23px;
+        }
+
+        .card p {
+            line-height: 1.7;
+        }
+
+        /* CHALLENGES */
+        .challenge {
+            border-top: 6px solid #d98c25;
+        }
+
+        .challenge h3 {
+            color: #b66a0d;
+        }
+
+        /* SOLUTIONS */
+        .solution {
+            border-top: 6px solid #3b7d42;
+        }
+
+        .solution h3 {
+            color: #286336;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        /* INTRODUCTION IMAGE */
+        .intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .intro img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+
+        .intro-text {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+            line-height: 1.8;
+        }
+
+        /* FINDINGS */
+        .finding {
+            background: #e7f3e4;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        .finding h3 {
+            color: #245c35;
+        }
+
+        /* QUESTIONS */
+        .question {
+            background: white;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 15px;
+            max-width: 850px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .question h3 {
+            color: #245c35;
+        }
+
+        /* CONCLUSION */
+        .conclusion {
+            background:
+                linear-gradient(
+                    rgba(20, 70, 35, 0.85),
+                    rgba(20, 70, 35, 0.9)
+                ),
+                url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1800&q=85");
+
+            background-size: cover;
+            background-position: center;
+
+            color: white;
+            text-align: center;
+        }
+
+        .conclusion h2 {
+            color: white;
+        }
+
+        .conclusion p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* SOURCES */
+        .sources a {
+            color: #245c35;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #183e25;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 800px) {
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .intro {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+
+    <div class="logo">
+        🌾 PH Agriculture
+    </div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#definitions">Definitions</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#findings">Findings</a>
+        <a href="#questions">Q&A</a>
+    </div>
+
+</nav>
+
+
+<!-- HERO / LARGE BACKGROUND IMAGE -->
+<section class="hero" id="home">
+
+    <h1>Agriculture & Fishery</h1>
+
+    <p>
+        Agriculture and fishery are important industries in the
+        Philippines because they provide food, jobs, and income
+        for many Filipinos.
+    </p>
+
+    <button onclick="document.getElementById('definitions').scrollIntoView()">
+        Explore the Topic
+    </button>
+
+</section>
+
+
+<!-- INTRODUCTION -->
+<section>
+
+    <h2 class="section-title">
+        Why Are They Important?
+    </h2>
+
+    <div class="intro">
+
+        <img
+            src="https://images.unsplash.com/photo-1530507629858-e4977d30e9e0?auto=format&fit=crop&w=1200&q=85"
+            alt="Agricultural field"
+        >
+
+        <div class="intro-text">
+
+            <p>
+                Agriculture and fishery are important industries in
+                the Philippines because they provide food, jobs, and
+                income for many Filipinos.
+            </p>
+
+            <p>
+                Agriculture is the practice of farming, growing crops,
+                and raising animals.
+            </p>
+
+            <p>
+                Fishery involves catching, raising, and managing fish
+                and other aquatic resources.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DEFINITIONS -->
+<section id="definitions">
+
+    <h2 class="section-title">
+        Basic Definitions
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=900&q=85"
+                alt="Farmland"
+            >
+
+            <div class="card-content">
+
+                <h3>🌾 Agriculture</h3>
+
+                <p>
+                    Agriculture is the practice of growing crops and
+                    raising animals to provide food, materials, and
+                    other products people need.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b?auto=format&fit=crop&w=900&q=85"
+                alt="Fishing boat"
+            >
+
+            <div class="card-content">
+
+                <h3>🐟 Fishery</h3>
+
+                <p>
+                    Fishery is the activity of catching, raising, and
+                    managing aquatic life for food and other uses.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=900&q=85"
+                alt="Corn crop"
+            >
+
+            <div class="card-content">
+
+                <h3>🌽 Crop</h3>
+
+                <p>
+                    A crop is a plant grown and harvested by farmers
+                    for food, animal feed, or other useful products.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CHALLENGES -->
+<section id="challenges">
+
+    <h2 class="section-title">
+        Challenges Faced by Farmers and Fishers
+    </h2>
+
+    <div class="cards">
+
+
+        <!-- CLIMATE -->
+        <div class="card challenge">
+
+            <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1561481403-44d7fbb15f6d?auto=format&fit=crop&w=900&q=85"
+                alt="Storm and climate change"
+            >
+
+            <div class="card-content">
+
+                <h3>🌡️ Climate Change</h3>
+
+                <p>
+                    Droughts, typhoons, floods, and unpredictable
+                    weather can damage crops, reduce productivity,
+                    and threaten food security.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCTION COST -->
+        <div class="card challenge">
+
+            <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=900&q=85"
+                alt="Farm equipment"
+            >
+
+            <div class="card-content">
+
+                <h3>💰 High Production Costs</h3>
+
+                <p>
+                    Fertilizers, pesticides, fuel, animal feeds,
+                    and other farm supplies can be expensive.
+                </p>
+
+                <p>
+                    Higher expenses make it harder for farmers
+                    to earn a profit.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- LOW INCOME -->
+        <div class="card challenge">
+
+            <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1592982537447-6f2a6a0a3b9c?auto=format&fit=crop&w=900&q=85"
+                alt="Farmer working in field"
+            >
+
+            <div class="card-content">
+
+                <h3>📉 Low Farmer Income</h3>
+
+                <p>
+                    Small farms may produce limited harvests and
+                    earn lower profits.
+                </p>
+
+                <p>
+                    Rising production costs and low selling prices
+                    reduce farmers' earnings.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SOLUTIONS -->
+<section id="solutions">
+
+    <h2 class="section-title">
+        Possible Solutions
+    </h2>
+
+    <div class="cards">
+
+
+        <!-- CLIMATE SOLUTION -->
+        <div class="card solution">
+
+            <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1592982537447-6f2a6a0a3b9c?auto=format&fit=crop&w=900&q=85"
+                alt="Sustainable farming"
+            >
+
+            <div class="card-content">
+
+                <h3>🌦️ Climate Change</h3>
+
+                <ul>
+                    <li>Provide farmers with better tools.</li>
+                    <li>Improve irrigation systems.</li>
+                    <li>Provide weather information.</li>
+                    <li>Improve drainage and flood protection.</li>
+                    <li>Introduce climate-resilient crops.</li>
+                    <li>Support farmers affected by extreme weather.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- COST SOLUTION -->
+        <div class="card solution">
+
+            <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=900&q=85"
+                alt="Modern farming"
+            >
+
+            <div class="card-content">
+
+                <h3>🚜 High Production Costs</h3>
+
+                <ul>
+                    <li>Make fertilizers and fuel more affordable.</li>
+                    <li>Reduce the cost of animal feeds.</li>
+                    <li>Provide financial assistance or subsidies.</li>
+                    <li>Encourage efficient farming methods.</li>
+                    <li>Reduce waste and unnecessary expenses.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- INCOME SOLUTION -->
+        <div class="card solution">
+
+            <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=900&q=85"
+                alt="Farmers market"
+            >
+
+            <div class="card-content">
+
+                <h3>🤝 Low Farmer Income</h3>
+
+                <ul>
+                    <li>Establish direct sales channels.</li>
+                    <li>Reduce dependence on middlemen.</li>
+                    <li>Connect farmers with consumers.</li>
+                    <li>Sell to local markets and restaurants.</li>
+                    <li>Use online communities to sell products.</li>
+                    <li>Support fair pricing.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- KEY FINDINGS -->
+<section id="findings">
+
+    <h2 class="section-title">
+        Key Findings
+    </h2>
+
+    <div class="finding">
+
+        <h3>📈 Rising Prices of Farm Inputs</h3>
+
+        <p>
+            High prices of imported fertilizers, pesticides,
+            and animal feeds increase overall production expenses.
+        </p>
+
+        <p>
+            <strong>Source:</strong> Food and Agriculture Organization (FAO)
+        </p>
+
+    </div>
+
+
+    <div class="finding">
+
+        <h3>💵 Low Income Among Farmers and Fishers</h3>
+
+        <p>
+            Rising production costs and limited profits contribute
+            to the economic difficulties faced by farmers and fishers.
+        </p>
+
+        <p>
+            <strong>Source:</strong> Philippine Statistics Authority (PSA)
+        </p>
+
+    </div>
+
+
+    <div class="finding">
+
+        <h3>🌪️ Climate Change Affects Food Production</h3>
+
+        <p>
+            Droughts, typhoons, and unpredictable weather can damage
+            harvests, lower farm productivity, and threaten food security.
+        </p>
+
+        <p>
+            <strong>Source:</strong> Climate Tracker Asia
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- QUESTIONS -->
+<section id="questions">
+
+    <h2 class="section-title">
+        Questions & Answers
+    </h2>
+
+
+    <div class="question">
+
+        <h3>❓ What is Agriculture?</h3>
+
+        <p>
+            Agriculture is the practice of growing crops and raising
+            animals to provide food, materials, and other products
+            people need.
+        </p>
+
+    </div>
+
+
+    <div class="question">
+
+        <h3>❓ What is Fishery?</h3>
+
+        <p>
+            Fishery is the activity of catching, raising, and managing
+            aquatic life for food and other uses.
+        </p>
+
+    </div>
+
+
+    <div class="question">
+
+        <h3>❓ What is a Crop?</h3>
+
+        <p>
+            A crop is a plant grown and harvested by farmers for food,
+            animal feed, or other useful products.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CONCLUSION -->
+<section class="conclusion">
+
+    <h2>Conclusion</h2>
+
+    <p>
+        Agriculture and fishery are essential to the Philippines'
+        food supply and economy. However, climate change, high
+        production costs, and low income continue to challenge
+        farmers and fishers.
+    </p>
+
+    <br>
+
+    <p>
+        By providing better support, affordable supplies, and
+        direct selling opportunities, we can help improve their
+        livelihoods and strengthen food security.
+    </p>
+
+</section>
+
+
+<!-- SOURCES -->
+<section>
+
+    <h2 class="section-title">
+        Sources
+    </h2>
+
+    <div class="card">
+
+        <div class="card-content">
+
+            <h3>Food and Agriculture Organization (FAO)</h3>
+
+            <p>
+                Information about agricultural production costs
+                and farm inputs.
+            </p>
+
+
+            <h3>Philippine Statistics Authority (PSA)</h3>
+
+            <p>
+                Information about poverty among farmers and fisherfolk.
+            </p>
+
+
+            <h3>Climate Tracker Asia</h3>
+
+            <p>
+                Information about climate change, agriculture,
+                and food security.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        🌾 Agriculture & Fishery in the Philippines
+    </p>
+
+    <p>
+        School Presentation Website
+    </p>
+
+</footer>
+
+</body>
+</html>
